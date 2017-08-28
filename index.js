@@ -23,9 +23,9 @@ function nowServing(array){
 
     // var message = `Currently serving ${person}`;
     // var elseMessage = `Currently serving ${person}`;
-    message = `Currently serving ${person}.`
+    servingMessage = `Currently serving ${person}.`
     array.shift();
-    return message;
+    return servingMessage;
 
 
   }
