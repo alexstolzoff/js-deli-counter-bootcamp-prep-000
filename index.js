@@ -17,7 +17,7 @@ function nowServing(array){
   var servingMessage;
   var dismissalMessage;
   if(array.length === null){
-      dismissalMessage = "There is nobody waiting to be served!";
+      dismissalMessage = "The line is currently empty.";
       return dismissalMessage;
   }else{
 
