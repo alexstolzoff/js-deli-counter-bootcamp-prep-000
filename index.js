@@ -24,11 +24,11 @@ var test = function nowServing(array){
     // var message = `Currently serving ${person}`;
     // var elseMessage = `Currently serving ${person}`;
     message = `Currently serving ${person}.`
-      return message;
+    return message;
 
 
   }
-  return array;
+  // return array;
 
 }
 // takeANumber(katzDeliLine, "Ada"); // "Welcome, Ada. You are number 1 in line."
