@@ -13,6 +13,7 @@ function takeANumber(array, name){
 function nowServing(array){
 
   var person = array[0];
+  array.shift();
   var servingMessage;
   var dismissalMessage;
   if(array.length === null){
@@ -24,7 +25,7 @@ function nowServing(array){
     // var elseMessage = `Currently serving ${person}`;
     message = `Currently serving ${person}.`
       return message;
-      array.shift();
+
 
   }
   return array;
