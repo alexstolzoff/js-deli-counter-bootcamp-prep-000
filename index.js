@@ -16,16 +16,16 @@ function nowServing(array){
   // array.shift();
   var servingMessage;
   var dismissalMessage;
-  if(array[0] != ""){
-    message = `Currently serving ${person}.`
-    array.shift();
-    return message;
+  if(array[0] == ""){
+    dismissalMessage = "The line is currently empty.";
+    return dismissalMessage;
   }else{
 
     // var message = `Currently serving ${person}`;
     // var elseMessage = `Currently serving ${person}`;
-    dismissalMessage = "The line is currently empty.";
-    return dismissalMessage;
+    message = `Currently serving ${person}.`
+    array.shift();
+    return message;
 
 
   }
