@@ -1,5 +1,5 @@
 var katzDeliLine = [];
-var newDeli = ["Steven", "Blake", "Avi"];
+var deliLine = ["Steven", "Blake", "Avi"];
 
 function takeANumber(array, name){
   var newArray = array;
@@ -44,4 +44,4 @@ function nowServing(array){
 takeANumber(katzDeliLine, "Ada"); // "Welcome, Ada. You are number 1 in line."
 takeANumber(katzDeliLine, "Grace"); // "Welcome, Grace. You are number 2 in line."
 takeANumber(katzDeliLine, "Kent"); // "Welcome, Kent. You are number 3 in line."
-nowServing(newDeli);
+nowServing(deliLine);
