@@ -12,10 +12,10 @@ var newDeli = ["Steven", "Blake", "Avi"];
 
 function nowServing(array){
 
-  var person = array[0];
-  array.shift();
-  var servingMessage;
-  var dismissalMessage;
+  // var person = array[0];
+  // array.shift();
+  // var servingMessage;
+  // var dismissalMessage;
   if(array.length === null){
       dismissalMessage = "The line is currently empty.";
       return dismissalMessage;
