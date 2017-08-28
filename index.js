@@ -10,11 +10,12 @@ function takeANumber(array, name){
 }
 
 function nowServing(array){
+  var newArray = array
   var message = "There is nobody waiting to be served!";
   if(array.length === null){
       var message = "There is nobody waiting to be served!";
   }else{
-    var person = array[0];
+    var person = newArray[0];
     var message = `Currently serving ${person}`;
     // var elseMessage = `Currently serving ${person}`;
 
