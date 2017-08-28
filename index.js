@@ -5,8 +5,8 @@ function takeANumber(array, name){
   newArray.push(name);
   var place = newArray.indexOf(name);
   var spot = place+1;
-  var message = `Welcome, ${name}. You are number ${spot} in line.`
-  return place+1;
+  var message = `Welcome, ${name}. You are number ${spot} in line.`;
+  return message;
 }
 
 takeANumber(katzDeliLine, "Ada");
