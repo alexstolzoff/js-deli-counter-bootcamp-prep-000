@@ -11,8 +11,8 @@ function takeANumber(array, name){
 }
 
 function nowServing(array){
-  var newArray = array
-  var person = newArray[0];
+
+  var person = array[0];
   var message;
   if(array.length === null){
       return "There is nobody waiting to be served!";
@@ -21,7 +21,7 @@ function nowServing(array){
     // var message = `Currently serving ${person}`;
     // var elseMessage = `Currently serving ${person}`;
       return `Currently serving ${person}.`;
-      newArray.pop();
+      array.pop();
 
   }
 
