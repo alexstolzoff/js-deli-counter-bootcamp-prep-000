@@ -16,7 +16,7 @@ function nowServing(array){
   array.shift();
   var servingMessage;
   var dismissalMessage;
-  if(array.length === 0){
+  if(array === null){
       dismissalMessage = "The line is currently empty.";
       return dismissalMessage;
   }else{
