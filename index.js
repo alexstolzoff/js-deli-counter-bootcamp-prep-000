@@ -9,6 +9,16 @@ function takeANumber(array, name){
   return message;
 }
 
+function nowServing(array){
+  var message = "There is nobody waiting to be served!";
+  if(array.[0] === null){
+    return message;
+  }else{
+    var person = array[0];
+    var elseMessage = `Currently serving ${person}`;
+    return elseMessage;
+  }
+}
 takeANumber(katzDeliLine, "Ada"); // "Welcome, Ada. You are number 1 in line."
 takeANumber(katzDeliLine, "Grace"); // "Welcome, Grace. You are number 2 in line."
 takeANumber(katzDeliLine, "Kent"); // "Welcome, Kent. You are number 3 in line."
