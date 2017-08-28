@@ -1,4 +1,5 @@
 var katzDeliLine = [];
+var newDeli = ["Steven", "Blake", "Avi"];
 
 function takeANumber(array, name){
   var newArray = array;
