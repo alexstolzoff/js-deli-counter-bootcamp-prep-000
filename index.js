@@ -13,18 +13,19 @@ var newDeli = ["Steven", "Blake", "Avi"];
 function nowServing(array){
 
   var person = array[0];
-  array.shift();
+  // array.shift();
   var servingMessage;
   var dismissalMessage;
-  if(array[0] == ""){
-      dismissalMessage = "The line is currently empty.";
-      return dismissalMessage;
+  if(array[0] != ""){
+    message = `Currently serving ${person}.`
+    array.shift();
+    return message;
   }else{
 
     // var message = `Currently serving ${person}`;
     // var elseMessage = `Currently serving ${person}`;
-    message = `Currently serving ${person}.`
-    return message;
+    dismissalMessage = "The line is currently empty.";
+    return dismissalMessage;
 
 
   }
