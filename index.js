@@ -10,7 +10,7 @@ var newDeli = ["Steven", "Blake", "Avi"];
 //   return message;
 // }
 
-var test = function nowServing(array){
+function nowServing(array){
 
   var person = array[0];
   array.shift();
@@ -34,4 +34,4 @@ var test = function nowServing(array){
 // takeANumber(katzDeliLine, "Ada"); // "Welcome, Ada. You are number 1 in line."
 // takeANumber(katzDeliLine, "Grace"); // "Welcome, Grace. You are number 2 in line."
 // takeANumber(katzDeliLine, "Kent"); // "Welcome, Kent. You are number 3 in line."
-test(newDeli);
+nowServing(newDeli);
