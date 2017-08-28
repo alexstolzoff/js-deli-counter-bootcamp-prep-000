@@ -16,7 +16,7 @@ function nowServing(array){
   array.shift();
   var servingMessage;
   var dismissalMessage;
-  if(array === null){
+  if(array[0] == ""){
       dismissalMessage = "The line is currently empty.";
       return dismissalMessage;
   }else{
@@ -30,6 +30,15 @@ function nowServing(array){
   }
   // return array;
 
+}
+
+function currentLine(array){
+  if(array.length>0){
+  for (let i = 0; array.length>i; i++){
+    var person = array[i];
+    return`${i}. ${person}`;
+  }
+}
 }
 // takeANumber(katzDeliLine, "Ada"); // "Welcome, Ada. You are number 1 in line."
 // takeANumber(katzDeliLine, "Grace"); // "Welcome, Grace. You are number 2 in line."
