@@ -19,7 +19,7 @@ function nowServing(array){
 
     // var message = `Currently serving ${person}`;
     // var elseMessage = `Currently serving ${person}`;
-      return `Currently serving ${person}`;
+      return `Currently serving ${person}.`;
       newArray.pop();
 
   }
