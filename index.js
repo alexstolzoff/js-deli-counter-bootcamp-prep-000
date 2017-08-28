@@ -12,7 +12,8 @@ var newDeli = ["Steven", "Blake", "Avi"];
 
 var test = function nowServing(array){
 
-  var person = array[0]; array.shift();
+  var person = array[0];
+  array.shift();
   var servingMessage;
   var dismissalMessage;
   if(array.length === null){
@@ -24,7 +25,7 @@ var test = function nowServing(array){
     // var elseMessage = `Currently serving ${person}`;
     message = `Currently serving ${person}.`
       return message;
-    
+
 
   }
   return array;
