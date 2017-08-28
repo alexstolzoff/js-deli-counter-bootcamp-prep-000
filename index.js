@@ -20,7 +20,8 @@ function nowServing(array){
 
     // var message = `Currently serving ${person}`;
     // var elseMessage = `Currently serving ${person}`;
-      return `Currently serving ${person}.`;
+    message = `Currently serving ${person}.`
+      return message;
       array.shift();
 
   }
