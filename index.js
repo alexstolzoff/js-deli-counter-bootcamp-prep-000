@@ -13,9 +13,11 @@ function takeANumber(array, name){
 function nowServing(array){
 
   var person = array[0];
-  var message;
+  var servingMessage;
+  var dismissalMessage;
   if(array.length === null){
-      return "There is nobody waiting to be served!";
+      dismissalMessage = "There is nobody waiting to be served!";
+      return dismissalMessage;
   }else{
 
     // var message = `Currently serving ${person}`;
